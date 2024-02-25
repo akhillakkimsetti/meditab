@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeflex/primeflex.css";
+@import "../node_modules/primeng/resources/themes/md-dark-indigo/theme.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-background: #8e0f85;
+  --secondary-background: rgba(228, 108, 13, 1);
+  --gradient: linear-gradient(
+    90deg,
+    rgba(216, 29, 202, 0.65) 17%,
+    rgba(243, 208, 164, 0.34) 100%
+  );
+  --white-color: #ffffff;
+  --color-purple1: #f4f7fe;
+  --color-purple2: #ece9ff;
+  --text-color: #5f6b8c;
+  --color-purple3: #b06cae;
+  --table-background: #ece9ff;
+  --table-header: #d6d0fe;
+  --gray-color: #c4c4c4;
+  --button-background: #d6d0fe;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "inter", sans-serif;
+  color: var(--text-color);
+
+  .label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .p-button {
+    min-width: max-content;
+    background-color: var(--button-background);
+    box-shadow: 2px 3px 10px 0px #62626240;
+    border: 0px;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+    margin-right: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-purple3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+    width: 8px;
+  }
+}
