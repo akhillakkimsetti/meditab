@@ -42,13 +42,11 @@ export class TableComponent implements OnInit {
       this.searchForm.get('lastName').patchValue(lastNameMatch?.[1]);
       this.searchForm.get('chartNo').patchValue(chartNoMatch?.[1]);
       this.searchForm.get('address').patchValue(addressMatch?.[1]);
-      console.log(nameMatch, lastNameMatch, chartNoMatch, addressMatch);
     });
     this.tableService.getCustomersLarge().then((val) => {
       this.customers = val;
       this.filteredCustomers = [...val];
       this.loading = false;
-      console.log(val);
     });
   }
 
@@ -125,7 +123,6 @@ export class TableComponent implements OnInit {
         .get('fullSearch')
         ?.patchValue(this.joinWithSymbols(parts.slice(1, parts.length)));
     }
-    console.log(this.searchForm.get('fullSearch').value, parts);
   }
 
   joinWithSymbols(strings: string[]) {
